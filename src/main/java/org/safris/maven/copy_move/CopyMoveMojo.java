@@ -110,15 +110,11 @@ public abstract class CopyMoveMojo extends AbstractMojo {
       throw new MojoExecutionException("destinationFile not specified");
 
     try {
-      if (destFile.exists()) {
-        if (!overWrite)
-          getLog().warn(destFile.getAbsolutePath() + " already exists and overWrite not set");
-        else if (destFile.isFile() != srcFile.isFile())
-          Files.delete(destFile.toPath());
-      }
-
       if (srcFile.exists()) {
-        if (allowIncremental() && buildContext.isIncremental() && destFile.exists() && !buildContext.hasDelta(srcFile) && FileUtils.contentEquals(srcFile, destFile)) {
+        if (destFile.exists() && !overWrite) {
+          getLog().warn(destFile.getAbsolutePath() + " already exists and overWrite not set");
+        }
+        else if (allowIncremental() && buildContext.isIncremental() && destFile.exists() && !buildContext.hasDelta(srcFile) && FileUtils.contentEquals(srcFile, destFile)) {
           getLog().info("No changes detected in " + srcFile.getAbsolutePath());
         }
         else {
