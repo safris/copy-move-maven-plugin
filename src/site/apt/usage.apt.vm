@@ -1,14 +1,14 @@
  ------
  Usage
  ------
- Aneesh Joseph
+ Seva Safris
  ------
- 2014-10-25
+ 2021-02-10
  ------
 
-~~ The MIT License
+~~ The MIT License (MIT)
 ~~
-~~ Copyright (c) 2004
+~~ Copyright (c) 2021 Seva Safris
 ~~
 ~~ Permission is hereby granted, free of charge, to any person obtaining a copy of
 ~~ this software and associated documentation files (the "Software"), to deal in
@@ -28,7 +28,6 @@
 ~~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 ~~ SOFTWARE.
 
-
 Usage
 
   Brief examples on how to use the Copy Maven Plugin's goals.
@@ -43,8 +42,8 @@ Usage
   <build>
     <plugins>
       <plugin>
-        <groupId>com.coderplus.maven.plugins</groupId>
-        <artifactId>copy-rename-maven-plugin</artifactId>
+        <groupId>org.safris.maven</groupId>
+        <artifactId>copy-move-maven-plugin</artifactId>
         <version>${project.version}</version>
         <executions>
           <execution>
@@ -77,8 +76,8 @@ Usage
   <build>
     <plugins>
       <plugin>
-        <groupId>com.coderplus.maven.plugins</groupId>
-        <artifactId>copy-rename-maven-plugin</artifactId>
+        <groupId>org.safris.maven</groupId>
+        <artifactId>copy-move-maven-plugin</artifactId>
         <version>${project.version}</version>
         <executions>
           <execution>
@@ -106,9 +105,9 @@ Usage
   </build>
 </project>
 -------------------
-* Rename a file during maven build
+* Move a file during maven build
 
-  The same as the first  example, but this time it will do a rename instead of copy
+  The same as the first  example, but this time it will do a move instead of copy
 
 -------------------
 <project>
@@ -116,15 +115,15 @@ Usage
   <build>
     <plugins>
       <plugin>
-        <groupId>com.coderplus.maven.plugins</groupId>
-        <artifactId>copy-rename-maven-plugin</artifactId>
+        <groupId>org.safris.maven</groupId>
+        <artifactId>copy-move-maven-plugin</artifactId>
         <version>${project.version}</version>
         <executions>
           <execution>
-            <id>rename-file</id>
+            <id>move-file</id>
             <phase>generate-sources</phase>
             <goals>
-              <goal>rename</goal>
+              <goal>move</goal>
             </goals>
             <configuration>
               <sourceFile>src/someDirectory/test.environment.properties</sourceFile>
@@ -137,9 +136,10 @@ Usage
   </build>
 </project>
 -------------------
-* Rename a directory during maven build
 
-  Similar to the above example, but this time it will do a rename a directory 
+* Move a directory during maven build
+
+  Similar to the above example, but this time it will do a move a directory 
 
 -------------------
 <project>
@@ -147,15 +147,15 @@ Usage
   <build>
     <plugins>
       <plugin>
-        <groupId>com.coderplus.maven.plugins</groupId>
-        <artifactId>copy-rename-maven-plugin</artifactId>
+        <groupId>org.safris.maven</groupId>
+        <artifactId>copy-move-maven-plugin</artifactId>
         <version>${project.version}</version>
         <executions>
           <execution>
-            <id>rename-file</id>
+            <id>move-file</id>
             <phase>generate-sources</phase>
             <goals>
-              <goal>rename</goal>
+              <goal>move</goal>
             </goals>
             <configuration>
               <sourceFile>target/someDirectory/</sourceFile>
@@ -168,9 +168,10 @@ Usage
   </build>
 </project>
 -------------------
-* Rename multiple files during maven build
 
-  The same as the second example, but this time it will do a rename instead of copy
+* Move multiple files during maven build
+
+  The same as the second example, but this time it will do a move instead of copy
 
 -------------------
 <project>
@@ -178,15 +179,15 @@ Usage
   <build>
     <plugins>
       <plugin>
-        <groupId>com.coderplus.maven.plugins</groupId>
-        <artifactId>copy-rename-maven-plugin</artifactId>
+        <groupId>org.safris.maven</groupId>
+        <artifactId>copy-move-maven-plugin</artifactId>
         <version>${project.version}</version>
         <executions>
           <execution>
-            <id>rename-file</id>
+            <id>move-file</id>
             <phase>generate-sources</phase>
             <goals>
-              <goal>rename</goal>
+              <goal>move</goal>
             </goals>
             <configuration>
               <fileSets>
@@ -208,9 +209,9 @@ Usage
 </project>
 -------------------
 
-* Rename multiple files/directories during maven build
+* Move multiple files/directories during maven build
 
-  The same as the second example, but this time it will do a rename instead of copy
+  The same as the second example, but this time it will do a move instead of copy
 
 -------------------
 <project>
@@ -218,15 +219,15 @@ Usage
   <build>
     <plugins>
       <plugin>
-        <groupId>com.coderplus.maven.plugins</groupId>
-        <artifactId>copy-rename-maven-plugin</artifactId>
+        <groupId>org.safris.maven</groupId>
+        <artifactId>copy-move-maven-plugin</artifactId>
         <version>${project.version}</version>
         <executions>
           <execution>
-            <id>rename-file</id>
+            <id>move-file</id>
             <phase>generate-sources</phase>
             <goals>
-              <goal>rename</goal>
+              <goal>move</goal>
             </goals>
             <configuration>
               <fileSets>

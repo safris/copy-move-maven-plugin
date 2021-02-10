@@ -1,14 +1,14 @@
  ------
- Introduction
+ Usage
  ------
- Aneesh Joseph
+ Seva Safris
  ------
- 2014-10-25
+ 2021-02-10
  ------
 
-~~ The MIT License
+~~ The MIT License (MIT)
 ~~
-~~ Copyright (c) 2004
+~~ Copyright (c) 2021 Seva Safris
 ~~
 ~~ Permission is hereby granted, free of charge, to any person obtaining a copy of
 ~~ this software and associated documentation files (the "Software"), to deal in
@@ -28,12 +28,11 @@
 ~~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 ~~ SOFTWARE.
 
-
-Copy Rename Maven Plugin
+Copy Move Maven Plugin
 
 ~~  Plugin introduction, description, and other relevant information.
 
-  * The copy-rename-maven-plugin helps in copying files or renaming files or directories during the Maven build lifecycle.
+  * The copy-move-maven-plugin helps in copying files or renaming files or directories during the Maven build lifecycle.
   
   * This plugin is compatible with  Eclipse m2e and should work on both full and incremental builds
 
@@ -41,18 +40,14 @@ Copy Rename Maven Plugin
 
 ~~  General Information about the goals.
 
-  * {{{./copy-mojo.html}copy-rename:copy}} Copy files during maven build.
+  * {{{./copy-mojo.html}copy-move:copy}} Copy files during maven build.
   
-  * {{{./rename-mojo.html}copy-rename:rename}} Rename files or directories during maven build.
-
+  * {{{./move-mojo.html}copy-move:move}} Move files or directories during maven build.
 
 * Usage
 
-  Instructions on how to use the Copy Rename Maven Plugin can be found on the {{{./usage.html}usage page}}.
+  Instructions on how to use the Copy Move Maven Plugin can be found on the {{{./usage.html}usage page}}.
   
 * Help/Contact
 
-  In case you would like report an issue, head over to the {{{https://github.com/coderplus/copy-rename-maven-plugin}GitHub Page}}. If you would like to say hello, contact us at the {{{http://coderplus.com}CoderPlus website}}.
-	  
-
-
+  In case you would like report an issue, head over to the {{{https://github.com/safris/copy-move-maven-plugin}GitHub Page}}.

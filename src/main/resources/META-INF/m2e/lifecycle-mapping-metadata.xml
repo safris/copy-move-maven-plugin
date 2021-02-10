@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <lifecycleMappingMetadata>
 	<pluginExecutions>
 		<pluginExecution>
 			<pluginExecutionFilter>
 				<goals>
 					<goal>copy</goal>
-					<goal>rename</goal>
+					<goal>move</goal>
 				</goals>
 			</pluginExecutionFilter>
 			<action>
